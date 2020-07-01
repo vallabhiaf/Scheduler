@@ -1,0 +1,16 @@
+---
+applications:
+- name: mhel_scheduler_service
+  instances: 1
+  memory: 700MB
+  disk_quota: 700MB
+  services:
+  - mhelprj-hdimhelhdb-I320271-workspaFaegKFUVsGZKwU5b
+  env:
+    TRAINING_SCHEDULER_UNIT: 'hour'
+    TRAINING_SCHEDULER_TIME_INTERVAL: 24
+    TRAINING_SCHEDULER_TIME: '2020-06-23 21:00:00'
+    PREDITCION_SCHEDULER_UNIT: 'seconds'
+    PREDICTION_SCHEDULER_TIME_INTERVAL: 70
+    PREDICTION_SCHEDULER_TIME: '2020-06-24 22:00:00'
+    
